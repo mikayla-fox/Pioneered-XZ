@@ -2,26 +2,27 @@
 
 Pioneer XDJ-XZ-inspired Mixxx skin, Pioneer DDJ-FLX4 controller mapping, and touchscreen keyboard integration for Raspberry Pi, designed to run on top of [ghztomash/StandaloneMixxx](https://github.com/ghztomash/StandaloneMixxx).
 
-## v1.0 — packaging in progress
+## v1.0.0 — Initial Public Release
 
-The first public release is being prepared from the previously tested **v136 overlay-keyboard** configuration. **The complete installer and release assets have not yet been published. Do not try to install from this repository yet.**
+The tested Pioneered-XZ v1.0.0 installer is now available: [download the release ZIP](https://github.com/mikayla-fox/Pioneered-XZ/releases/tag/v1.0.0).
 
-The intended package includes:
-- The Pioneered-XZ skin and its assets
-- The custom Pioneer DDJ-FLX4 controller mapping
-- The SEARCH/X keyboard helper for an 800×480 touchscreen
-- A patched `wvkbd-mobintl` using the Wayland **overlay** layer so it stays over fullscreen Mixxx
-- An installer that configures labwc autostart and avoids overwriting the underlying StandaloneMixxx build
+The package includes the touchscreen skin, DDJ-FLX4 mapping, 10 custom FX chain presets, SEARCH/X keyboard helper, patched fullscreen Wayland keyboard, and automated installer with configuration backups.
+
+**Known issue:** The PITCH FX preset does not currently work properly due to a latency issue.
 
 ## Platform and compatibility
 
-The existing tested touchscreen helper targets **800×480**, **Wayland/labwc**, and a touchscreen device identified as `generic ft5x06`. It currently needs adapting to users other than `/home/mix`. Raspberry Pi 4B 4GB is the intended public target; compatibility and installation on that hardware still need independent validation.
+Tested on a Raspberry Pi 4B (4GB) with the custom Mixxx 2.7 build from [StandaloneMixxx](https://github.com/ghztomash/StandaloneMixxx), an 800×480 touchscreen, Wayland/labwc, and Pioneer DDJ-FLX4. Compatibility with other setups has not been verified. The touchscreen helper targets the `generic ft5x06` device; installations under usernames other than `mix` may need adaptation.
 
 ## Installation
 
-First follow the setup guide in [StandaloneMixxx](https://github.com/ghztomash/StandaloneMixxx). Pioneered-XZ will be an add-on rather than a replacement for that build.
+1. Set up Mixxx using [ghztomash/StandaloneMixxx](https://github.com/ghztomash/StandaloneMixxx).
+2. [Download Pioneered-XZ v1.0.0](https://github.com/mikayla-fox/Pioneered-XZ/releases/tag/v1.0.0) and extract the ZIP on the Raspberry Pi.
+3. Close Mixxx, open a terminal in the extracted folder and run `bash install.sh`.
+4. Select the Pioneered-XZ skin and DDJ-FLX4 controller mapping in Mixxx.
+5. Reboot the Raspberry Pi.
 
-**Installation commands will be provided when the full v1.0 package and installer have been uploaded and verified.**
+**Important:** The installer backs up existing FX configurations and replaces user FX chain presets with the 10 Pioneered-XZ presets.
 
 ## Credits
 
@@ -37,4 +38,4 @@ Pioneered-XZ is an independently developed modification and extension of these p
 
 ## Development history
 
-**v1.0** is the public release name for the working v136 keyboard baseline. This is a release renaming, not a functional change.
+**v1.0.0** is the initial public release of the tested Pioneered-XZ installer and configuration.
