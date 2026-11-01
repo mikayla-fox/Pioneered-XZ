@@ -25,7 +25,15 @@ First follow the setup guide in [StandaloneMixxx](https://github.com/ghztomash/S
 
 ## Credits
 
-Standalone Mixxx Raspberry Pi setup: [ghztomash](https://github.com/ghztomash/StandaloneMixxx). The controller mapping incorporates work credited in its source to Warker, nschloe, dj3730, jusko, Robert904, tomash_ghz and mikayla.fox.
+Pioneered-XZ builds on these open-source projects:
+
+- [timewasternl — Pioneered](https://github.com/timewasternl/Pioneered): original Pioneered Mixxx skin, forming the foundation of the touchscreen interface.
+- [ghztomash — FLX-Mixxx](https://github.com/ghztomash/FLX-Mixxx): updated DDJ-FLX4 mapping forming the foundation of the controller integration.
+- [ghztomash — StandaloneMixxx](https://github.com/ghztomash/StandaloneMixxx): Raspberry Pi standalone Mixxx environment that Pioneered-XZ is designed to complement.
+
+Special thanks to these creators and the wider Mixxx community. The controller mapping also incorporates work credited in its source to Warker, nschloe, dj3730, jusko, Robert904, tomash_ghz and mikayla.fox.
+
+Pioneered-XZ is an independently developed modification and extension of these projects.
 
 ## Development history
 
